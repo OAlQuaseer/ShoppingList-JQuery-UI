@@ -7,6 +7,7 @@
 
 
 body {
+
     background: #EFEDDF;
     font-family: 'Quicksand', sans-serif;
     font-size: 17px;
@@ -39,7 +40,6 @@ main{
     text-transform: uppercase;
     color: #666;
     float: left;
-    font-family: 'Quicksand', sans-serif;
     transition: all 0.3s;
 }
 
@@ -52,9 +52,22 @@ main{
     color: #FFF;
     text-transform: uppercase;
     cursor: pointer;
-    font-family: 'Quicksand', sans-serif;
     /*transition: all 0.3s;*/
     /*position: relative;*/
     border-radius: 6px;
 }
+
+.items-container ul {
+    /*overflow: hidden;*/
+}
+
+.items-container .nothing-message {
+
+    background: url("../images/logo2.png") no-repeat center 20px;
+    height: 160px;
+    color: #666;
+    background-size: 15%;
+
+}
+
 
