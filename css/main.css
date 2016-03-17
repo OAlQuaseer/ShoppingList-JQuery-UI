@@ -10,7 +10,6 @@ body {
 
     background: #EFEDDF;
     font-family: 'Quicksand', sans-serif;
-    font-size: 17px;
     text-transform: uppercase;
 }
 
@@ -52,13 +51,14 @@ main{
     color: #FFF;
     text-transform: uppercase;
     cursor: pointer;
-    /*transition: all 0.3s;*/
+    transition: all 0.3s;
     /*position: relative;*/
     border-radius: 6px;
 }
 
 .items-container ul {
-    /*overflow: hidden;*/
+    overflow: hidden;
+    padding: 0;
 }
 
 .items-container .nothing-message {
@@ -70,4 +70,38 @@ main{
 
 }
 
+.items-container .task-headline {
+    display: none;
+    color: #666666;
+    border-bottom: 1px solid #C8C7BB;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    position: relative;
+}
+
+#controls {
+    display: none;
+    text-align: center;
+    clear: both;
+    margin-top: 60px;
+    background: #E4E3D5;
+    padding: 20px;
+    border: 1px solid #c8c7bb;
+}
+
+#controls p {
+    display: inline-block;
+    color: #666;
+}
+
+#clear-all-tasks {
+    margin-top: 20px;
+    background: #999;
+    border: none;
+    color: #FFF;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
 
