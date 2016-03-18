@@ -1,6 +1,6 @@
 * {
 	
-	outline: 1px solid red;
+	/*outline: 1px solid red;*/
 	box-sizing: border-box;
 
 }
@@ -103,5 +103,25 @@ main{
     padding: 10px 20px;
     cursor: pointer;
     transition: all 0.3s;
+}
+
+#task-container li {
+    display: none;
+    float: left;
+    width: 49%;
+    /*overflow: auto;*/
+    height: auto;
+    min-height: 10px;
+    background: #FFF;
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #CCC;
+    color: #666;
+    border-top: 9px solid #39D1B4;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-right: 2%;
+    transition: all 0.3s;
+    /*position: relative;*/
 }
 
