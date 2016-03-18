@@ -28,20 +28,19 @@ function insertionNewItem(){
 	$('#controls').fadeIn(400);
 
 
-	// create the new li from the form input
+	// Alert if the form in submitted empty
 	var item = $('input[name=task-insert]').val();
-	var newItem = '<li>' + '<p>'+item+'</p>' + '</li>'
-	$('#task-list').append(newItem);
+	if (item.length == 0) {
+			alert('please insert a new item in the shopping list');
+	}else{
+		// create the new li from the form input
+		var newItem = '<li>' + '<p>'+item+'</p>' + '</li>'
+		$('#task-list').append(newItem);
+	};
+	
 
 
 	// clear form when button is pressed
 	$('input').val('');
-
-	// Alert if the form in submitted empty
-	if (item.length == 0) {
-			alert('please insert a new item in the shopping list');
-		};
-
-
 
 }

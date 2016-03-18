@@ -105,11 +105,11 @@ main{
     transition: all 0.3s;
 }
 
-#task-container li {
+.items-container li {
     display: none;
-    float: left;
-    width: 49%;
-    /*overflow: auto;*/
+    /*float: left;*/
+    width: 48%;
+    overflow: auto;
     height: auto;
     min-height: 10px;
     background: #FFF;
@@ -122,6 +122,6 @@ main{
     margin-bottom: 10px;
     margin-right: 2%;
     transition: all 0.3s;
-    /*position: relative;*/
+    position: relative;
 }
 
