@@ -14,6 +14,14 @@ $(document).ready(function(){
 
 	});
 
+	// Clear all tasks button
+	$('button#clear-all-tasks').click(function(){
+		$('#task-list li').remove();
+		$('.task-headline').fadeOut(300);
+		$('#controls').fadeOut(300);
+		$('.nothing-message').show(500);
+	});
+
 
 
 
@@ -37,8 +45,6 @@ function insertionNewItem(){
 		var newItem = '<li>' + '<p>'+item+'</p>' + '</li>'
 		$('#task-list').append(newItem);
 	};
-	
-
 
 	// clear form when button is pressed
 	$('input').val('');
