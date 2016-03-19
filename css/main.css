@@ -140,3 +140,16 @@ main{
 	text-decoration: line-through;
 }
 
+
+.items-container li.complete:before{
+	
+	background: url("../images/Logo-DONE.png") no-repeat;
+    position: absolute;
+    top: 18px;
+    right: 5px;
+    content: "";
+    width: 92px;
+    height: 55px;
+    background-size: 95%;
+    background-color: #35D435;
+}

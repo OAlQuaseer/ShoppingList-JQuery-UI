@@ -36,10 +36,9 @@ $(document).ready(function(){
 	// double click to remove
 	$(document).on('dblclick','.items-container li',function(){
 		$(this).remove();
+		//when the last Item is removed 
 		if ($(".items-container li").length === 0){
-
 			$('button#clear-all-tasks').trigger("click");
-
 		}
 	});
 
