@@ -23,14 +23,11 @@ $(document).ready(function(){
 	});
 
 	// // mark as complete
-	// $(".items-container ul li").click(function(){
+	// // two ways to code this scenario
+	// // the second way is coded at line 66
+	// $(document).on('click','.items-container li',function(){
 	// 	$(this).toggleClass('complete');
 	// });
-
-	// mark as complete
-	$(document).on('click','.items-container li',function(){
-		$(this).toggleClass('complete');
-	});
 
 
 	// double click to remove
@@ -62,6 +59,15 @@ function insertionNewItem(){
 		// create the new li from the form input
 		var newItem = '<li>' + '<p>'+item+'</p>' + '</li>'
 		$('#task-list').append(newItem);
+
+		// mark as complete
+		// since we are adding the Li's elements dynamically, so we need to add their
+		//listeners dynamically too.
+		$('#task-list li:last-child').click(function(){
+			$(this).toggleClass('complete');
+		});
+
+
 	};
 
 	// clear form when button is pressed

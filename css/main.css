@@ -107,7 +107,7 @@ main{
 
 .items-container li {
     display: none;
-    /*float: left;*/
+    float: left;
     width: 48%;
     overflow: auto;
     height: auto;
