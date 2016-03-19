@@ -131,7 +131,7 @@ main{
 }
 
 .items-container li.complete{
-    opacity: 0.3;
+    opacity: 0.6;
     border-top: 9px solid #666;
     transition: all 0.3s;
 }
@@ -151,5 +151,5 @@ main{
     width: 92px;
     height: 55px;
     background-size: 95%;
-    background-color: #35D435;
+    background-color: #39D1B4;
 }
