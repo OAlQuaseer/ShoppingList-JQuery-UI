@@ -63,7 +63,7 @@ function insertionNewItem(){
 		// mark as complete
 		// since we are adding the Li's elements dynamically, so we need to add their
 		//listeners dynamically too.
-		$(".items-container ul li").click(function(){
+		$('#task-list li:last-child').click(function(){
 			$(this).toggleClass('complete');
 		});
 
