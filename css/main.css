@@ -125,3 +125,9 @@ main{
     position: relative;
 }
 
+.items-container li:hover{
+	
+	opacity: 0.8;
+    border-top: 9px solid #F0553B;
+}
+
