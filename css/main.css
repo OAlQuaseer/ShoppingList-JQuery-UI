@@ -126,8 +126,17 @@ main{
 }
 
 .items-container li:hover{
-	
 	opacity: 0.8;
     border-top: 9px solid #F0553B;
+}
+
+.items-container li.complete{
+    opacity: 0.3;
+    border-top: 9px solid #666;
+    transition: all 0.3s;
+}
+
+.items-container li.complete p{
+	text-decoration: line-through;
 }
 

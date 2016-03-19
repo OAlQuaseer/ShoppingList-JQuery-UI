@@ -22,6 +22,15 @@ $(document).ready(function(){
 		$('.nothing-message').show(500);
 	});
 
+	// // mark as complete
+	// $(".items-container ul li").click(function(){
+	// 	$(this).toggleClass('complete');
+	// });
+
+	// mark as complete
+	$(document).on('click','.items-container li',function(){
+		$(this).toggleClass('complete');
+	});
 
 
 
