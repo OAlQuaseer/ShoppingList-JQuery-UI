@@ -33,6 +33,11 @@ $(document).ready(function(){
 	});
 
 
+	// double click to remove
+	$(document).on('dblclick','li',function(){
+		$(this).remove();
+	});
+
 
 });
 
